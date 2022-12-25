@@ -1,0 +1,857 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #000;
+}
+
+.navbar-nav .nav-link.active {
+    position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 70%;
+    left: 14%;
+}
+#main-nav{
+    transition: background-color 2s, padding 2s;
+    z-index: 999;
+}
+#home {
+    background-image: url(../images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.home-content h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    font-weight: lighter;
+    color: #fff;
+    position: relative;
+    right: 110%;
+}
+
+.home-content h1::after {
+    content: "";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    animation: word 12s linear alternate infinite;
+    top: 0%;
+    left: 120%;
+}
+
+@keyframes word {
+    0% {
+        content: "|";
+    }
+
+    1.6% {
+        content: "D|";
+    }
+
+    3.2% {
+        content: "DE|";
+    }
+
+    4.8% {
+        content: "DES|";
+    }
+
+    6.4% {
+        content: "DESI|";
+    }
+
+    8% {
+        content: "DESIG|";
+    }
+
+    9.6% {
+        content: "DESIGN|";
+    }
+
+    11.2% {
+        content: "DESIGNE|";
+    }
+
+    12.8% {
+        content: "DESIGNER|";
+    }
+
+    14.4% {
+        content: "DESIGNE|";
+    }
+
+    16% {
+        content: "DESIGN|";
+    }
+
+    17.6% {
+        content: "DESIG|";
+    }
+
+    19.2% {
+        content: "DESI|";
+    }
+
+    20.8% {
+        content: "DES|";
+    }
+
+    22.4% {
+        content: "DE|";
+    }
+
+    24% {
+        content: "D|";
+    }
+
+    25.6% {
+        content: "|";
+    }
+
+    27.2% {
+        content: "D|";
+    }
+
+    28.8% {
+        content: "DE|";
+    }
+
+    30.4% {
+        content: "DEV|";
+    }
+
+    32% {
+        content: "DEVE|";
+    }
+
+    33.6% {
+        content: "DEVEL|";
+    }
+
+    35.2% {
+        content: "DEVELO|";
+    }
+
+    36.8% {
+        content: "DEVELOP|";
+    }
+
+    39.4% {
+        content: "DEVELOPE|";
+    }
+
+    41% {
+        content: "DEVELOPER|";
+    }
+
+    42.6% {
+        content: "DEVELOPE|";
+    }
+
+    44.2% {
+        content: "DEVELOP|";
+    }
+
+    45.8% {
+        content: "DEVELO|";
+    }
+
+    47.4% {
+        content: "DEVEL|";
+    }
+
+    49% {
+        content: "DEVE|";
+    }
+
+    50.6% {
+        content: "DEV|";
+    }
+
+    52.2% {
+        content: "DE|";
+    }
+
+    53.8% {
+        content: "D|";
+    }
+
+    55.4% {
+        content: "|";
+    }
+
+    57% {
+        content: "L|";
+    }
+
+    58.6% {
+        content: "LA|";
+    }
+
+    60.2% {
+        content: "LAR|";
+    }
+
+    61.8% {
+        content: "LARR|";
+    }
+
+    63.4% {
+        content: "LARRY|";
+    }
+
+    65% {
+        content: "LARRYD|";
+    }
+
+    66.6% {
+        content: "LARRYDAN|";
+    }
+
+    68.2% {
+        content: "LARRYDANI|";
+    }
+
+    70.8% {
+        content: "LARRYDANIE|";
+    }
+
+    72.4% {
+        content: "LARRYDANIEL|";
+    }
+
+    74% {
+        content: "LARRYDANIELS|";
+    }
+
+    75.6% {
+        content: "LARRYDANIEL|";
+    }
+
+    77.2% {
+        content: "LARRYDANIE|";
+    }
+
+    78.8% {
+        content: "LARRYDANI|";
+    }
+
+    79.4% {
+        content: "LARRYDAN|";
+    }
+
+    81% {
+        content: "LARRYDA|";
+    }
+
+    82.6% {
+        content: "LARRYD|";
+    }
+
+    84.2% {
+        content: "LARRY|";
+    }
+
+    85.8% {
+        content: "LARR|";
+    }
+
+    89% {
+        content: "LAR|";
+    }
+
+    92% {
+        content: "LA|";
+    }
+
+    95% {
+        content: "L|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+
+
+.bottom-30 {
+    bottom: 30%;
+}
+
+#home i {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home a {
+    text-decoration: none;
+    color: #fff;
+}
+#About {
+    width: 100%;
+    background-color: #fff;
+}
+
+#About .left {
+    position: relative;
+    height: 100vh;
+}
+
+.about-layer {
+    width: 350px;
+    height: 400px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 25%;
+
+
+}
+
+.left img {
+    width: 400px;
+    height: 470px;
+    position: absolute;
+    top: 9%;
+    left: 7%;
+}
+
+#About .right {
+    padding-top: 50px;
+}
+
+#About .right h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #343434;
+}
+
+#About .right .p1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #748182;
+
+}
+
+#About .right p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999;
+}
+
+#About .right span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #748182;
+}
+
+.progress {
+    background-color: #f7f7f7;
+    box-shadow: inset 0 0 4px #000;
+}
+
+.progress-bar {
+    background-color: #000;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: "Web Design";
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    left: 3%;
+}
+
+.progress-bar::before {
+    content: "95%";
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    right: 3%;
+}
+
+.progress-bar1 {
+    background-color: #000;
+    position: relative;
+}
+
+.progress-bar1::after {
+    content: "Branding";
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    left: 3%;
+}
+
+.progress-bar1::before {
+    content: "80%";
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    right: 3%;
+}
+
+.progress-bar2 {
+    background-color: #000;
+    position: relative;
+}
+
+.progress-bar2::after {
+    content: "Development";
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    left: 3%;
+}
+
+.progress-bar2::before {
+    content: "90%";
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    right: 3%;
+}
+
+#About .right button {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#About .right button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+
+}
+
+#About .right .one {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.3s;
+}
+
+#About .right .one:hover {
+
+    background-color: #000;
+    color: #fff;
+}
+.body2{
+    background-color: #f7f7f7;
+}
+.head-service h2{
+    position: relative;
+    font-weight: 900;
+    font-size: 40px;
+    display: inline-block;
+    color: #343434;
+    z-index: 1;
+}
+.head-service h2::after{
+    content: '';
+width: 100%;
+height: 30px;
+background-image: url(../images/dots.png);
+background-repeat: repeat;
+position: absolute;
+bottom: -10px;
+left: 0;
+z-index: -1;
+}
+.serdiv{
+    box-shadow: 0px 10px 30px 8px rgb(0 0 0 / 10%);
+}
+.serv{
+    width: 100px;
+    height: 100px;
+    font-size: 27px;
+    padding: 15px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.serdiv:hover .serv{
+    background: #1c1c1c;
+    color: #eee;;
+}
+.body22 .row{
+    box-shadow: 2px #111;
+}
+.body22 .row{
+    text-align: center;
+}
+.section-head h3{
+    font-weight: 900;
+font-size: 40px;
+position: relative;
+display: inline-block;
+color: #343434;
+}
+.section-head h3::after{
+    content: '';
+width: 100%;
+height: 30px;
+background-image: url(../images/dots.png);
+background-repeat: repeat;
+position: absolute;
+bottom: -10px;
+left: 0;
+z-index: -1;
+}
+.heads .all{
+    position: relative;
+}
+.heads .all::before{
+    content: "";
+    width: 100%;
+height: 3px;
+background: #111;
+position: absolute;
+left: 0;
+bottom: -5px;
+z-index: -1;
+}
+.heads span{
+    margin: 0 15px;
+color: #222;
+font-weight: 700;
+font-size: 16px;
+cursor: pointer;
+position: relative;
+z-index: 2;
+}
+.icon1{
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 12px;
+    border: 1px #000 solid;
+    margin: 2px;
+}
+.icon1:hover{
+    background-color: #fff;
+    color: #000;
+}
+.info h6{
+    font-size: 12px;
+font-weight: 700;
+color: #343434;
+letter-spacing: 2px;
+margin-bottom: 30px;
+transition: all 0.4s;
+transition-delay: 0.1555s;
+}
+.img-overlay:hover .info h6{
+    margin-bottom: 15px;
+}
+.img{
+    position: relative;
+}
+.img-overlay{
+    position: absolute;
+    background-color:rgba(255, 255, 255, 0.95);
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.img-overlay:hover{
+    opacity: 1;
+}
+.img-client{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+.client-feedback h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color: #869791;
+    margin: 5px 7px;
+}
+#blog h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #343434;
+    font-weight: bold;
+    padding-top: 70px;
+    position: relative;
+    z-index: 555;
+}
+.bb5{
+    border: none;
+}
+#blog h2::before {
+    content: '';
+    width: 25%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    z-index: -1;
+}
+#blog .item{
+    overflow: hidden;
+}
+#blog .image{
+    overflow: hidden;
+}
+#blog img{
+    transition: all 0.5s;
+}
+#blog .item:hover img{
+    transform: scale(1.2);
+}
+#blog h4{
+    font-weight: 800;
+font-size: 20px;
+line-height: 1.6;
+padding-left: 5px;
+}
+#blog h2::before {
+    content: '';
+    width: 11%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    z-index: -1;
+}
+#blog p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #888;
+    padding: 20px;
+    font-weight: 100;
+}
+#blog .under {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 400;
+}
+#blog .under::after {
+    content: "";
+    background-color: #000;
+    height: 2px;
+    width: 15%;
+    margin-left: 5%;
+    position: absolute;
+    top: 65%;
+    left: 0;
+}
+#blog .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+    position: relative;
+    top: 70px;
+}
+#carouselExampleIndicators {
+    padding-top: 50px;
+}
+.section-head.body4 h3{
+    font-weight: 900;
+font-size: 40px;
+position: relative;
+display: inline-block;
+color: #343434;
+z-index: 1;
+}
+.section-head.body4 h3::after{
+    content: '';
+width: 100%;
+height: 30px;
+background-image: url(../images/dots.png);
+background-repeat: repeat;
+position: absolute;
+bottom: -10px;
+left: 0;
+z-index: -1;
+}
+.card-title a{
+    text-decoration: none;
+    font-size: 12px;
+font-weight: 600;
+color: #888;
+margin-bottom: 10px;
+}
+#contact {
+    padding: 100px 150px;
+
+}
+#contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #343434;
+    font-weight: bold;
+    padding-top: 70px;
+    position: relative;
+    z-index: 555;
+}
+
+#contact h2::before {
+    content: '';
+    width: 28%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    z-index: -1;
+}
+
+#contact h6 {
+    color: #343434;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#contact p {
+    color: #748182;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+#contact .item {
+    padding: 20px;
+
+}
+
+#contact .icon {
+    font-size: 35px;
+    padding: 10px;
+    width: 160px;
+    height: 160px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all .5s
+}
+
+#contact .item:hover .icon {
+    background-color: #000;
+    color: #f4f4f4;
+}
+
+#contact form .name {
+    width: 100%;
+    border-radius: 6px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+#contact form .message {
+    width: 100%;
+    height: 160px;
+    margin-top: 15px;
+    border-radius: 6px;
+    background: #f4f4f4;
+}
+
+#contact button {
+    background-color: #000;
+    color: #fff;
+    width: 100px;
+    transition: all .6s;
+    border: 2px solid #000;
+}
+
+#contact button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+#foot {
+    width: 100%;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+#foot {
+    font-family: 'Poppins', sans-serif;
+    color: #748182;
+    font-size: 13px;
+    padding-top: 40px;
+}
+.body66 h3{
+    font-weight: 900;
+font-size: 40px;
+position: relative;
+display: inline-block;
+color: #343434;
+z-index: 1;
+}
+.body66 h3::after{
+    content: '';
+width: 100%;
+height: 30px;
+background-image: url(../images/dots.png);
+background-repeat: repeat;
+position: absolute;
+bottom: -10px;
+left: 0;
+z-index: -1;
+}
